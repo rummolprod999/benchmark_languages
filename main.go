@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func fib(n int) int {
+func fib(n int) int64 {
 	if n < 3 {
 		return 1
 	}
@@ -13,9 +13,13 @@ func fib(n int) int {
 }
 func main() {
 	a := time.Now()
-	s := fib(45)
+	var s int64
+	for i := 0; i < 3; i++ {
+		s = fib(45)
+	}
 	b := time.Now()
 	c := b.Sub(a)
-	fmt.Println(c)
 	fmt.Println(s)
+	fmt.Println(c)
+	fmt.Println(c / 3.0)
 }

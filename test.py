@@ -7,8 +7,11 @@ def fib(n):
 
 if __name__ == '__main__':
     a = datetime.datetime.now()
-    s = fib(40)
+    for i in range(2):
+        s = fib(40)
     b = datetime.datetime.now()
     c = b - a
-    print(c.seconds)
     print(s)
+    print(c.seconds)
+    print(c.seconds/3)
+    
