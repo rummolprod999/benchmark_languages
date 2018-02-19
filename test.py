@@ -8,7 +8,7 @@ def fib(n):
 if __name__ == '__main__':
     a = datetime.datetime.now()
     for i in range(2):
-        s = fib(40)
+        s = fib(45)
     b = datetime.datetime.now()
     c = b - a
     print(s)
